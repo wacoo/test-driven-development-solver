@@ -21,4 +21,13 @@ describe Solver do
             expect(solver).to respond_to('fizzbuzz')
         end
     end
+
+    context 'factorial method' do
+        it '(factorial(4)) should should return 24' do
+            solver = Solver.new
+            expect(solver.factorial(4)).to eql(24)
+        end
+    end
+
+
 end
