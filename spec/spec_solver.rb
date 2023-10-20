@@ -27,6 +27,14 @@ describe Solver do
             solver = Solver.new
             expect(solver.factorial(4)).to eql(24)
         end
+        it '(factorial(0)) should should return 1' do
+            solver = Solver.new
+            expect(solver.factorial(1)).to eql(1)
+        end
+        it '(factorial(-2)) should should raise an "NegativeNumber"' do
+            solver = Solver.new
+            expect{solver.factorial(-2)}.to raise_error('NegativeNumber')
+        end
     end
 
 
