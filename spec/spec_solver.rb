@@ -36,6 +36,12 @@ describe Solver do
             expect{solver.factorial(-2)}.to raise_error('NegativeNumber')
         end
     end
-
-
+    context 'reverse method' do
+        it '(reverse("book") should return koob' do
+            input = 'book'
+            output = 'koob'
+            solver = Solver.new 
+            expect(solver.reverse(input)).to eql(output)
+        end
+    end
 end
