@@ -45,3 +45,47 @@ describe Solver do
         end
     end
 end
+
+context 'fizzbuzz method' do
+    it '(fizzbuzz(6)) should return fizz' do
+        input = 6
+        output = 'fizz'
+        solver = Solver.new
+        expect(solver.fizzbuzz(input)).to eql(output)
+    end
+
+    it '(fizzbuzz(7)) should return "7"' do
+        input = 7
+        output = '7'
+        solver = Solver.new
+        expect(solver.fizzbuzz(input)).to eql(output)
+    end
+    
+    it '(fizzbuzz(11)) should return "11"' do
+        input = 11
+        output = '11'
+        solver = Solver.new
+        expect(solver.fizzbuzz(input)).to eql(output)
+    end
+
+    it '(fizzbuzz(10)) should return buzz' do
+        input = 10
+        output = 'buzz'
+        solver = Solver.new
+        expect(solver.fizzbuzz(input)).to eql(output)
+    end
+
+    it '(fizzbuzz(15)) should return fizzbuzz' do
+        input = 15
+        output = 'fizzbuzz'
+        solver = Solver.new
+        expect(solver.fizzbuzz(input)).to eql(output)
+    end
+
+    it '(fizzbuzz(0)) should return 0' do
+        input = 0
+        output = '0'
+        solver = Solver.new
+        expect(solver.fizzbuzz(input)).to eql(output)
+    end
+end
