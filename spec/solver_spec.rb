@@ -6,17 +6,17 @@ describe Solver do
       expect(solver).to be_instance_of(Solver)
     end
 
-    it '(solver) should should have a method factorial' do
+    it '(solver) should have a method factorial' do
       solver = Solver.new
       expect(solver).to respond_to('factorial')
     end
 
-    it '(solver) should should have a method reverse' do
+    it '(solver) should have a method reverse' do
       solver = Solver.new
       expect(solver).to respond_to('reverse')
     end
 
-    it '(solver) should should have a method fizzbuzz' do
+    it '(solver) should have a method fizzbuzz' do
       solver = Solver.new
       expect(solver).to respond_to('fizzbuzz')
     end
@@ -27,11 +27,11 @@ describe Solver do
       solver = Solver.new
       expect(solver.factorial(4)).to eql(24)
     end
-    it '(factorial(0)) should should return 1' do
+    it '(factorial(0)) should return 1' do
       solver = Solver.new
       expect(solver.factorial(1)).to eql(1)
     end
-    it '(factorial(-2)) should should raise an "NegativeNumber"' do
+    it '(factorial(-2)) should raise an "NegativeNumber"' do
       solver = Solver.new
       expect { solver.factorial(-2) }.to raise_error('NegativeNumber')
     end

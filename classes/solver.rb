@@ -38,6 +38,3 @@ class Solver
         end
     end
 end
-
-# sol = Solver.new
-# puts sol.fizzbuzz(0)
