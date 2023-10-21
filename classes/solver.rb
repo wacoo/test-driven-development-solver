@@ -1,41 +1,29 @@
 class Solver
-    def factorial(n)
-        num = 1
-        total = 1
-        if n < 0
-            puts raise('NegativeNumber')
-        elsif n == 0
-            1
-        else
-            while (num <= n)
-                total *= num
-                num += 1
-            end
-            total
-        end
-    end
+  def factorial(num)
+    raise('NegativeNumber') if num.negative?
 
-    def reverse(str)
-        str.reverse
+    if num.zero?
+      1
+    else
+      num * factorial(num - 1)
     end
+  end
 
-    def fizzbuzz(n)
-        if n < 1
-            "#{n}"
-        else
-            if n % 3 == 0 && n % 5 == 0
-                'fizzbuzz'
-            elsif n % 3 == 0
-                'fizz'
-            elsif n % 5 == 0
-                'buzz'
-            else
-                "#{n}"
-            end
-        end
+  def reverse(str)
+    str.reverse
+  end
+
+  def fizzbuzz(num)
+    if num < 1
+      num.to_s
+    elsif (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
+    else
+      num.to_s
     end
-<<<<<<< HEAD
+  end
 end
-=======
-end
->>>>>>> 2a1e3a78efa4e884cca9e62b82a3462cf7b89c8e
