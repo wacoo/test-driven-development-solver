@@ -16,10 +16,7 @@ class Solver
     end
 
     def reverse(str)
-        strArray = str.chars
-        reversedArray = strArray.reverse
-        reversed = reversedArray.join
-        reversed
+        str.reverse
     end
 
     def fizzbuzz(n)
@@ -37,4 +34,8 @@ class Solver
             end
         end
     end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 2a1e3a78efa4e884cca9e62b82a3462cf7b89c8e
