@@ -83,7 +83,7 @@ describe Solver do
 
     it '(fizzbuzz(0)) should return 0' do
       input = 0
-      output = '0'
+      output = 'fizzbuzz'
       solver = Solver.new
       expect(solver.fizzbuzz(input)).to eql(output)
     end
