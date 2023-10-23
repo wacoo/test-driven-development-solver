@@ -30,7 +30,7 @@ In this project, we created a class based on the TDD approach. We added the test
 
 ### Tech Stack <a name="tech-stack">https://www.ruby-lang.org/en/</a>
 
-<!-- Features -->
+<!--  Features -->
 
 ### Key Features <a name="key-features"></a>
 - Rpec Tests
